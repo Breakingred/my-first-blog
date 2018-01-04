@@ -20,4 +20,15 @@ from django.contrib import admin
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls')),
 ]
+
+#
+# from django.conf.urls import include, url
+# from django.contrib import admin
+#
+# urlpatterns = [
+#     path('polls/', include('polls.urls')),
+#     url(r'^admin/', include(admin.site.urls)),
+#     url(r'', include('blog.urls')),
+# ]

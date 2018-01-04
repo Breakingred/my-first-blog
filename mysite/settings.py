@@ -23,8 +23,8 @@ SECRET_KEY = 'i&*liz_07rt)j)e&gakjdk4%*4%7rbd$t@^waxgn1nq(dx%+m4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+# fixme 这里如果为空，则在pythonanywhere发布时报错Invalid HTTP_HOST header: 'breakingred.pythonanywhere.com'. You may need to add 'breakingred.pythonanywhere.com' to ALLOWED_HOSTS.
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
